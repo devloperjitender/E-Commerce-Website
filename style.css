@@ -1,0 +1,256 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: 'spartan', sans-serif;
+}
+
+/* For Giveing Default padding to every Section */
+.section-p {
+  padding: 40px 80px;
+}
+
+/* For Giveing Default margin to every Section */
+.section-m {
+  margin: 40px 0;
+}
+
+
+body {
+  width: 100%;
+
+}
+
+/* Header part */
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #e3e6f3;
+  position: sticky;
+  z-index: 100;
+  left: 0;
+  top: 0;
+}
+
+#logo {
+  border: 2px solid rgb(231, 222, 222);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  margin: 20px 30px;
+}
+
+#navbar {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding: 0px 20px;
+  margin: 20px 10px;
+}
+
+#navbar li {
+  padding: 0px 8px;
+  list-style: none;
+
+
+}
+
+#navbar li a {
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 600;
+  color: #1a1a1a;
+  transition: 0.3s ease;
+}
+
+#navbar li a:hover {
+  color: green;
+  font-size: 13px;
+  text-decoration: underline;
+}
+
+/* Home Page  */
+#hero {
+  background-image: url("./img/hero4.png");
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: top 25% right 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px 30px;
+  justify-content: center;
+
+}
+
+#hero h4 {
+  padding-bottom: 10px;
+}
+
+#hero h1 {
+  color: #088178;
+}
+
+#hero button {
+  background-color: rgb(27, 27, 90);
+  padding: 0.20em 1em;
+  border-radius: 10px;
+  color: white;
+  margin-top: 1em;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+#feature {
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+
+
+}
+
+#feature .fe-box {
+  width: 180px;
+  text-align: center;
+  padding: 10px 15px;
+  border: 2px solid rgb(252, 244, 244);
+  box-shadow: 20px 20px 35px rgba(0, 0, 0, 0.03);
+  border-radius: 8px;
+  margin-bottom: 10px;
+
+}
+
+.fe-box h6 {
+  background-color: pink;
+  margin-top: 20px;
+  display: inline-block;
+  padding: 3px 20px;
+  text-align: center;
+  color: #088178;
+  border-radius: 4px;
+}
+
+#feature .fe-box:nth-child(2) h6 {
+  background-color: #ebd5d5;
+}
+
+#feature .fe-box:nth-child(3) h6 {
+  background-color: #b89494;
+}
+
+#feature .fe-box:nth-child(4) h6 {
+  background-color: #b1a5f8;
+}
+
+#feature .fe-box:nth-child(5) h6 {
+  background-color: #bad9f3;
+}
+
+#feature .fe-box:nth-child(6) h6 {
+  background-color: rgb(161, 161, 77);
+}
+
+/* Product 1 design Summer Collection New Modern Design  */
+#product1 {
+  text-align: center;
+  
+}
+
+#product1 .pro-main{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+/*   */
+#product1 .temp {
+  width: 180px; 
+  min-width: 150px;
+  margin: 5px 5px;
+  border: 1px solid #cce7d0;
+  border-radius: 10px;
+  padding: 5px 5px;
+  text-align: left;
+  cursor: pointer;
+  position: relative;
+
+}
+
+#product1 .temp img {
+  width: 100%;
+
+  border-radius: 10px;
+}
+
+#product1 .temp h6 {
+  font-size: 10px;
+  font-weight: 400;
+  color: #606063;
+  padding-top: 5px;
+
+
+}
+
+#product1 .temp p {
+  font-size: 12px;
+  font-weight: 800px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: gray;
+
+
+}
+
+.star {
+  color: #ffdf00;
+  
+
+}
+
+#product1 .temp span {
+  color: green;
+  font-size: 11px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.temp i {
+  color: dark rgb(243, 181, 25);
+  text-align: right;
+  font-size: 12px;
+}
+
+#product1 .temp .cart {
+ 
+  font-size: 17px;
+  color: #088178;
+  border: 1px solid #cce7d0;
+  border-radius: 80px;
+  background-color: #e8f6ea;
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  
+
+}
+
+/* Designing Banner */
+
+#banner{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./img/banner/b2.jpg);
+  width: 100%;
+  height: 50vh;
+}
+
+#banner h4{
+  color: white;
+  font-size: 20px;
+}
