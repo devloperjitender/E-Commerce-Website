@@ -31,7 +31,11 @@ body {
   z-index: 100;
   left: 0;
   top: 0;
+
+
 }
+
+
 
 #logo {
   border: 2px solid rgb(231, 222, 222);
@@ -49,16 +53,23 @@ body {
   margin: 20px 10px;
 }
 
+#close {
+  display: none;
+}
+
+
+
 #navbar li {
   padding: 0px 8px;
   list-style: none;
+
 
 
 }
 
 #navbar li a {
   text-decoration: none;
-  font-size: 12px;
+  font-size: 18px;
   font-weight: 600;
   color: #1a1a1a;
   transition: 0.3s ease;
@@ -66,8 +77,13 @@ body {
 
 #navbar li a:hover {
   color: green;
-  font-size: 13px;
+  font-size: 19px;
   text-decoration: underline;
+}
+
+#mobile {
+  display: none;
+  align-items: center;
 }
 
 /* Home Page  */
@@ -106,7 +122,7 @@ body {
 #feature {
   display: flex;
   text-align: center;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
   width: 100%;
 
@@ -116,7 +132,7 @@ body {
 #feature .fe-box {
   width: 180px;
   text-align: center;
-  padding: 10px 15px;
+  padding: 10px;
   border: 2px solid rgb(252, 244, 244);
   box-shadow: 20px 20px 35px rgba(0, 0, 0, 0.03);
   border-radius: 8px;
@@ -157,23 +173,23 @@ body {
 /* Product 1 design Summer Collection New Modern Design  */
 #product1 {
   text-align: center;
-  
+
 }
 
-#product1 .pro-main{
+#product1 .pro-main {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
 }
 
-/*   */
+
+
 #product1 .temp {
-  width: 180px; 
-  min-width: 150px;
-  margin: 5px 5px;
+  width: 320px;
+  margin: 5px 0px;
   border: 1px solid #cce7d0;
   border-radius: 10px;
-  padding: 5px 5px;
+
   text-align: left;
   cursor: pointer;
   position: relative;
@@ -187,35 +203,36 @@ body {
 }
 
 #product1 .temp h6 {
-  font-size: 10px;
+  font-size: 13px;
   font-weight: 400;
   color: #606063;
-  padding-top: 5px;
+  padding: 5px 5px;
 
 
 }
 
 #product1 .temp p {
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 800px;
   font-family: Arial, Helvetica, sans-serif;
   color: gray;
+  padding: 0px 5px;
 
 
 }
 
 .star {
   color: #ffdf00;
-  
+  padding: 0px 5px;
 
 }
 
 #product1 .temp span {
   color: green;
-  font-size: 11px;
+  font-size: 15px;
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
-
+  padding: 0px 5px;
 }
 
 .temp i {
@@ -225,7 +242,7 @@ body {
 }
 
 #product1 .temp .cart {
- 
+
   font-size: 17px;
   color: #088178;
   border: 1px solid #cce7d0;
@@ -234,13 +251,408 @@ body {
   position: absolute;
   bottom: 10px;
   right: 20px;
-  
+
 
 }
 
 /* Designing Banner */
 
-#banner{
+#banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./img/banner/b2.jpg);
+  width: 100%;
+  height: 40vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#banner h2 {
+  color: white;
+  font-size: 25px;
+  padding-bottom: 10px;
+
+}
+
+#banner h4 {
+  color: white;
+  font-size: 20px;
+}
+
+#banner span {
+  color: red;
+}
+
+#banner button {
+  color: white;
+}
+
+#banner .btn {
+  font-size: 13px;
+  font-weight: 600;
+  padding: 0 1em;
+  color: #0d0e0d;
+  background-color: #fff;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+#banner .btn:hover {
+  background-color: #088178;
+}
+
+#sm-banner {
+  display: flex;
+
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+
+}
+
+#sm-banner .banner-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  justify-content: center;
+  background-image: url("./img/banner/b17.jpg");
+  width: 580px;
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 10px;
+
+}
+
+#sm-banner .banner-box2 {
+  background-image: url("./img/banner/b10.jpg");
+}
+
+#sm-banner h4 {
+  font-size: 12px;
+  color: white;
+  font-weight: bold;
+
+}
+
+#sm-banner h1 {
+  font-size: 15px;
+  color: white;
+  font-weight: bold;
+
+}
+
+#sm-banner p {
+  font-size: 12px;
+  color: white;
+  font-weight: bold;
+  padding-bottom: 20px;
+
+}
+
+#sm-banner button {
+  width: 8.2em;
+  height: 30px;
+  border: 1px solid #cce7d0;
+  border-radius: 5px;
+  padding: 0 1em;
+  background-color: transparent;
+  color: white;
+
+}
+
+#sm-banner .banner-box:hover button {
+  background-color: #088178;
+}
+
+/* News Latter Section Designing */
+#newsletter {
+  width: 100%;
+  height: 40vh;
+  margin: 10px;
+  padding: 80px 0px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+ border-radius: 2px;
+  background-color: midnightblue;
+  background-repeat: no-repeat;
+  background-position: cover;
+  
+}
+
+.newstext h4 {
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+}
+
+.newstext p {
+  font-size: 17px;
+  color: rgb(211, 191, 191);
+  font-weight: bold;
+}
+
+.newstext p span {
+  color: rgb(253, 253, 5);
+}
+
+#newsletter .form {
+  display: flex;
+  width: 30%;
+
+}
+
+.form input {
+  height: 40px;
+
+  font-size: 13px;
+  padding: 0 0.7em;
+  outline: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  width: 100%;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+
+}
+
+.form button {
+  height: 40px;
+  font-size: 13px;
+  width: 40%;
+  background-color: #088178;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  white-space: nowrap;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  color: white;
+
+}
+
+/* Styling Footer */
+footer .logo {
+  border: 2px solid rgb(231, 222, 222);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  margin-bottom: 20px;
+
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  font-size: 20px;
+
+}
+
+footer .col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 40px;
+  margin: 10px;
+  width: 300px;
+}
+
+footer h4 {
+  font-size: 15px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+footer p {
+  font-size: 13px;
+  padding: 0 0 4px 0;
+}
+
+footer a {
+  font-size: 10px;
+  padding: 0 0 4px 0;
+  text-decoration: none;
+  color: #222;
+}
+
+footer .row img {
+  border: 1px solid #088178;
+  width: 100px;
+  margin: 0 0 10px 0;
+}
+
+/* Making Responsive Design With diffrent Devices
+Start Of Media Query
+*/
+@media (max-width:799px) {
+  #navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    top: -13px;
+    right: -300px;
+    height: 100vh;
+    width: 200px;
+    position: fixed;
+    background-color: #e3e6f3;
+    padding: 40px 0 0 10px;
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.03);
+
+    transition: 0.3s ease;
+
+  }
+
+  #navbar.active {
+    right: 0px;
+  }
+
+  #close {
+    display: initial;
+    position: absolute;
+    top: 20px;
+    left: 15px;
+    font-size: 24px;
+    color: #222;
+  }
+
+  #navbar li {
+    margin-bottom: 10px;
+  }
+
+  #mobile {
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+    /* border: 2px solid black; */
+
+  }
+
+  #mobile i {
+    color: #1a1a1a;
+    font-size: 20px;
+    padding: 10px 10px;
+  }
+
+  #remov {
+    display: none;
+  }
+
+  /* Hero Section Design for ipad */
+  #hero {
+
+    height: 40vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 30px;
+    justify-content: center;
+  }
+
+  /* Feture Section Design for ipad */
+  #feature {
+
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  #feature .fe-box {
+    margin: 5px;
+  }
+
+  /* Feture product Section Design for ipad */
+
+  #product1 .pro-main {
+
+    justify-content: center;
+
+  }
+
+  #product1 .temp {
+    width: 300px;
+    min-width: 150px;
+    margin: 5px;
+
+  }
+
+  /* Service Banner ipad style */
+  #banner {
+
+    width: 100%;
+    height: 20vh;
+
+  }
+
+  /* i pad styles for sm banner */
+  #sm-banner .banner-box {
+
+
+    justify-content: center;
+
+    width: 100%;
+    height: 30vh;
+    margin-bottom: 5px;
+  }
+
+  /* ipad Style for NewsLetter */
+
+  #newsletter {
+    width: 100%;
+    height: 20vh;
+    margin: 10px;
+    justify-content: center;
+
+  }
+
+  #newsletter .form {
+    width: 50%;
+    padding-top: 10px;
+  }
+}
+
+
+/* Design For Mobile Device  */
+
+@media (max-width:477px){
+  .section-p {
+    padding: 20px;
+}
+  #hero {
+    
+    height: 30vh;
+    width: 100%;
+    background-position: top 25% right -20px;
+    padding: 3px 3px;
+    
+}
+h2,h1{
+  font-size: 1em;
+}
+p {
+  font-size: 0.85em;
+}
+
+#feature .fe-box {
+  width: 150px;
+  
+}
+#product1 .temp {
+  width: 90%;
+}
+#banner {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -248,9 +660,134 @@ body {
   background-image: url(./img/banner/b2.jpg);
   width: 100%;
   height: 50vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#newsletter {
+  width: 90%;
+  height: 30vh;
+
+
+}
 }
 
-#banner h4{
-  color: white;
-  font-size: 20px;
+/* Desihning Shop.html */
+#page-header{
+  background-image: url("img/banner/b1.jpg");
+  width: 100%;
+  height: 40vh;
+  padding: 80px;
+  margin-bottom: 30px;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
+#page-header h2,
+#page-header p{
+  display: flex;
+  flex-direction: column;
+  color: white;
+  text-align: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+  
+}
+
+#pagination{
+  text-align: center;
+  align-items: center;
+}
+#pagination a{
+  text-decoration: none;
+  color: white;
+  background-color: #088178;
+  padding: 0.5em 1.5em;
+  border-radius: 3px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* SingleProductDetails.html design */
+
+#sproductDetails{
+  display: flex;
+ 
+}
+
+#sproductDetails  .single-pro-image{
+  width: 30%;
+  margin-right: 40px;
+
+
+}
+#sproductDetails  .single-pro-image .minImageGroup{
+ display: flex;
+ justify-content: space-between;
+
+} 
+.minImage{
+  flex-basis: 24%;
+  justify-content: space-between;
+  cursor: pointer;
+}
+#sproductDetails .signgleProDetails{
+  width: 50%;
+  padding-top: 40px;
+}
+.signgleProDetails h6{
+  padding-bottom: 20px;
+  font-size: 20px;
+  font-weight: bold;
+
+}
+.signgleProDetails h4{
+  padding-bottom: 20px;
+  font-size: 30px;
+  font-weight: bold;
+
+}
+.signgleProDetails h3{
+  padding-bottom: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #088178;
+
+}
+.signgleProDetails select{
+  display: block;
+  margin-bottom: 20px;
+  font-size: 13px;
+  padding: 0.25em 1em;
+  border-radius: 5px;
+  outline: none;
+  
+
+}
+.signgleProDetails input{
+  width: 60px;
+  height: 40px;
+  font-size: 20px;
+  padding: 5px 5px;
+  outline: none;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 50px;
+
+}
+.signgleProDetails button{
+  width:150px;
+  height: 40px;
+  font-size: 20px;
+  padding: 5px 10px;
+  outline: none;
+  background-color: #088178;
+  color: white;
+  border-radius: 5px;
+}
+.signgleProDetails span{
+  line-height: 30px;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
