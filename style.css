@@ -198,7 +198,7 @@ body {
 
 #product1 .temp img {
   width: 100%;
-
+ user-select: none;
   border-radius: 10px;
 }
 
@@ -381,11 +381,11 @@ body {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
- border-radius: 2px;
+  border-radius: 2px;
   background-color: midnightblue;
   background-repeat: no-repeat;
   background-position: cover;
-  
+
 }
 
 .newstext h4 {
@@ -466,18 +466,18 @@ footer .col {
 }
 
 footer h4 {
-  font-size: 15px;
+  font-size: 20px;
   font-weight: bold;
   padding-bottom: 10px;
 }
 
 footer p {
-  font-size: 13px;
+  font-size: 15px;
   padding: 0 0 4px 0;
 }
 
 footer a {
-  font-size: 10px;
+  font-size: 15px;
   padding: 0 0 4px 0;
   text-decoration: none;
   color: #222;
@@ -488,6 +488,370 @@ footer .row img {
   width: 100px;
   margin: 0 0 10px 0;
 }
+
+
+/* Desihning Shop.html */
+#page-header {
+  background-image: url("img/banner/b1.jpg");
+  width: 100%;
+  height: 40vh;
+  padding: 80px;
+  margin-bottom: 30px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#page-header h2,
+#page-header p {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  text-align: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+
+}
+
+#pagination {
+  text-align: center;
+  align-items: center;
+}
+
+#pagination a {
+  text-decoration: none;
+  color: white;
+  background-color: #088178;
+  padding: 0.5em 1.5em;
+  border-radius: 3px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* SingleProductDetails.html design */
+
+#sproductDetails {
+  display: flex;
+
+}
+
+#sproductDetails .single-pro-image {
+  width: 30%;
+  margin-right: 40px;
+  user-select: none;
+
+
+}
+
+#sproductDetails .single-pro-image .minImageGroup {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.minImage {
+  flex-basis: 24%;
+  justify-content: space-between;
+  cursor: pointer;
+  user-select: none;
+}
+
+#sproductDetails .signgleProDetails {
+  width: 50%;
+  padding-top: 40px;
+}
+
+.signgleProDetails h6 {
+  padding-bottom: 20px;
+  font-size: 20px;
+  font-weight: bold;
+
+}
+
+.signgleProDetails h4 {
+  padding-bottom: 20px;
+  font-size: 30px;
+  font-weight: bold;
+
+}
+
+.signgleProDetails h3 {
+  padding-bottom: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #088178;
+
+}
+
+.signgleProDetails select {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 13px;
+  padding: 0.25em 1em;
+  border-radius: 5px;
+  outline: none;
+
+
+}
+
+.signgleProDetails input {
+  width: 60px;
+  height: 40px;
+  font-size: 20px;
+  padding: 5px 5px;
+  outline: none;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 50px;
+
+}
+
+.signgleProDetails button ,.userInput .form button{
+  width: 150px;
+  height: 40px;
+  font-size: 20px;
+  padding: 5px 10px;
+  outline: none;
+  background-color: #088178;
+  color: white;
+  border-radius: 5px;
+}
+
+.signgleProDetails span {
+  line-height: 30px;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Design Blog.html */
+
+#page-header.blog-header {
+
+  background-image: url("./img/blog/blogHead.jpg");
+}
+
+#blog {
+  padding: 150px 150px 0px 150px;
+}
+
+#blog .blog-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#blog .blog-box .blogImg {
+  width: 50%;
+}
+
+#blog .blog-box img {
+  width: 100%;
+  height: 300px;
+  margin-bottom: 20px;
+
+}
+
+#blog .blog-details {
+  margin-left: 40px;
+
+}
+
+#blog .blog-details h4 {
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+#blog .blog-details p {
+  font-size: 20px;
+  line-height: 30px;
+  padding-bottom: 10px;
+}
+
+
+
+/* Design about.html */
+
+#page-header.about-header {
+  background-image: url("./img/about/banner.png");
+
+}
+
+#about-main {
+  display: flex;
+  align-items: center;
+  padding: 100px 0 0 100px;
+}
+
+#about-main img {
+  width: 500px;
+  height: auto;
+}
+
+#about-main .aboutDetails {
+  padding-left: 30px;
+}
+
+.aboutDetails h2 {
+  font-size: 50px;
+  font-family: 'Courier New', Courier, monospace;
+
+}
+
+.aboutDetails p {
+  color: gray;
+  line-height: 20px;
+
+}
+
+#about-video {
+  text-align: center;
+}
+
+#about-video .video {
+  width: 70%;
+  height: 70%;
+  margin: 20px auto 0 auto;
+}
+
+#about-video video {
+  width: 100%;
+  height: 450px;
+
+}
+
+#about-video h2 {
+  font-size: 40px;
+  padding-bottom: 20px;
+}
+
+#about-video h2 a {
+  text-decoration: none;
+}
+
+/* Design contact.html Page */
+#contact-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+ 
+
+}
+
+#contact-details .details {
+  width: 40%;
+
+}
+
+.details span, #form-details .userInput span {
+  color: gray;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.details h2 , #form-details .userInput h2{
+  font-size: 18px;
+  color: #ccc;
+  padding-bottom: 40px;
+}
+
+.details h3 {
+  font-size: 20px;
+  color: #088178;
+  padding-bottom: 20px
+}
+
+.details li {
+  list-style: none;
+  display: flex;
+
+}
+
+.details li i {
+  padding-right: 10px;
+  font-size: 20px;
+  padding-bottom: 10px;
+
+}
+
+.details li p {
+  font-size: 15px;
+
+
+}
+#contact-details .map{
+  width: 50%;
+  height: 300px;
+  
+}
+#contact-details .map iframe{
+  width: 100%;
+  height: 100%;
+  
+}
+
+#form-details{
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #e1e1e1;
+  border-radius: 5px;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.03);
+  padding: 10px;
+  margin: 10px;
+}
+#form-details .userInput{
+  width: 40%;
+  padding-left: 20px;
+}
+#form-details .userInput .form{
+  display: flex;
+  flex-direction: column;
+
+
+}
+#form-details .userInput .form input,
+#form-details .userInput .form textarea{
+  
+  background-color: #e1e1e1;
+  margin-bottom: 10px;
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  justify-content: flex-start;
+}
+.userInput .form textarea{
+  padding-left: 9px;
+}
+#form-details .people{
+  margin-top: 60px;
+  align-items: flex-start;
+  margin-right: 60px;
+}
+
+#form-details .people div{
+  display: flex;
+ padding-bottom:20px ;
+}
+#form-details .people div img{
+  object-fit: cover;
+  margin-right: 20px;
+}
+#form-details .people div p span{
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+  color: #222;
+}
+
+#form-details .people div p{
+  margin-top: 20px;
+  color: gray;
+}
+
+
+
+
+
+
+
 
 /* Making Responsive Design With diffrent Devices
 Start Of Media Query
@@ -621,173 +985,111 @@ Start Of Media Query
     width: 50%;
     padding-top: 10px;
   }
+
+  /* Blog design for i pad */
+  #blog {
+    padding: 20px 20px 0px 30px;
+  }
 }
 
 
 /* Design For Mobile Device  */
 
-@media (max-width:477px){
+@media (max-width:477px) {
   .section-p {
     padding: 20px;
-}
+  }
+
   #hero {
-    
+
     height: 30vh;
     width: 100%;
     background-position: top 25% right -20px;
     padding: 3px 3px;
-    
-}
-h2,h1{
-  font-size: 1em;
-}
-p {
-  font-size: 0.85em;
-}
 
-#feature .fe-box {
-  width: 150px;
-  
+  }
+
+  h2,
+  h1 {
+    font-size: 1em;
+  }
+
+  p {
+    font-size: 0.85em;
+  }
+
+  #feature .fe-box {
+    width: 150px;
+
+  }
+
+  #product1 .temp {
+    width: 90%;
+  }
+
+  #banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./img/banner/b2.jpg);
+    width: 100%;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  #newsletter {
+    width: 90%;
+    height: 30vh;
+
+
+  }
+
+  /* blog Design for Mobile */
+  #blog .blog-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  #blog .blog-box img {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 20px;
+  }
+
+  /* Design For Mobile contact.html */
+  #contact-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
-#product1 .temp {
-  width: 90%;
+  #contact-details .details {
+    width: 100%;
 }
-#banner {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-image: url(./img/banner/b2.jpg);
+#contact-details .map {
   width: 100%;
-  height: 50vh;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-#newsletter {
-  width: 90%;
-  height: 30vh;
-
-
-}
-}
-
-/* Desihning Shop.html */
-#page-header{
-  background-image: url("img/banner/b1.jpg");
-  width: 100%;
-  height: 40vh;
-  padding: 80px;
-  margin-bottom: 30px;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-#page-header h2,
-#page-header p{
-  display: flex;
-  flex-direction: column;
-  color: white;
-  text-align: center;
-  align-items: center;
-  font-size: 20px;
-  font-weight: bold;
-  
-}
-
-#pagination{
-  text-align: center;
-  align-items: center;
-}
-#pagination a{
-  text-decoration: none;
-  color: white;
-  background-color: #088178;
-  padding: 0.5em 1.5em;
-  border-radius: 3px;
-  font-size: 18px;
-  font-weight: bold;
-}
-
-/* SingleProductDetails.html design */
-
-#sproductDetails{
-  display: flex;
- 
-}
-
-#sproductDetails  .single-pro-image{
-  width: 30%;
-  margin-right: 40px;
-
-
-}
-#sproductDetails  .single-pro-image .minImageGroup{
- display: flex;
- justify-content: space-between;
-
-} 
-.minImage{
-  flex-basis: 24%;
-  justify-content: space-between;
-  cursor: pointer;
-}
-#sproductDetails .signgleProDetails{
-  width: 50%;
-  padding-top: 40px;
-}
-.signgleProDetails h6{
-  padding-bottom: 20px;
-  font-size: 20px;
-  font-weight: bold;
-
-}
-.signgleProDetails h4{
-  padding-bottom: 20px;
-  font-size: 30px;
-  font-weight: bold;
-
-}
-.signgleProDetails h3{
-  padding-bottom: 20px;
-  font-size: 30px;
-  font-weight: bold;
-  color: #088178;
-
-}
-.signgleProDetails select{
-  display: block;
+  height: 300px;
   margin-bottom: 20px;
-  font-size: 13px;
-  padding: 0.25em 1em;
-  border-radius: 5px;
-  outline: none;
+}
+#form-details {
   
-
+  flex-direction: column;
+  justify-content:flex-start;
+  padding: 0px;
+  margin: 0px;
 }
-.signgleProDetails input{
-  width: 60px;
-  height: 40px;
-  font-size: 20px;
-  padding: 5px 5px;
-  outline: none;
-  font-family: Arial, Helvetica, sans-serif;
-  margin-bottom: 50px;
-
+#form-details .userInput {
+  width: 100%;
+  padding-left: 10px;
 }
-.signgleProDetails button{
-  width:150px;
-  height: 40px;
-  font-size: 20px;
-  padding: 5px 10px;
-  outline: none;
-  background-color: #088178;
-  color: white;
-  border-radius: 5px;
-}
-.signgleProDetails span{
-  line-height: 30px;
-  font-size: 20px;
-  font-family: Arial, Helvetica, sans-serif;
+#form-details .people div {
+  display: flex;
+  padding: 20px;
 }
 
-
+}
