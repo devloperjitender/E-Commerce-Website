@@ -32,73 +32,76 @@
         </div>
     </section>
     <section id="page-header" class="about-header">
-        <h2>#lets Talk</h2>
-        <p>LEAVE A MESSAGE, We Love To hear From You!</p>
+        <h2>#Your Cart Is Here</h2>
+        <p>Here Is Your Excited Shopping Details</p>
     </section>
-    <section id="contact-details" class="section-p">
-        <div class="details">
-            <span>GET IN TOUCH</span>
-            <h2>Visit one Of our agency locations or contact us today </h2>
-            <h3>Contact Us</h3>
-            <div>
-                <li>
-                    <i class="bi bi-geo-alt"></i>
-                    <p>dummy-street,122509,hyderabad</p>
-                </li>
-            </div>
-            <div>
-                <li>
-                    <i class="bi bi-envelope"></i>
-                    <p>devloperjitender100@gmail.com</p>
-                </li>
-            </div>
-            <div>
-                <li>
-                    <i class="bi bi-person-lines-fill"></i>
-                    <p>+91-8780122561</p>
-                </li>
-            </div>
-            <div>
-                <li>
-                    <i class="bi bi-clock"></i>
-                    <p>Monday To Saturday : 11.00AM - 11PM</p>
-                </li>
-            </div>
-
-        </div>
-        <div class="map">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.482039331044!2d78.36437497421072!3d17.436627601386547!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb93dde99389b7%3A0x9fa27c4050405510!2sPronix%20IT%20Solutions%20Pvt%20Ltd!5e0!3m2!1sen!2sin!4v1724940454971!5m2!1sen!2sin"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
+    <section id="cart" class="section-p">
+        <table width="100%">
+           <thead >
+            <tr>
+                <td>Remove</td>
+                <td>Image</td>
+                <td>Product</td>
+                <td>Price</td>
+                <td>Quantity</td>
+                <td>SubTotal</td>
+            </tr>
+           </thead> 
+           <tbody>
+            <tr>
+                <td><a href="#"><i class="bi bi-trash"></i></a></td>
+                <td><img src="./img/product/f1.jpg"></td>
+                <td>Addidas Product</td>
+                <td>$79</td>
+                <td><input type="number" min="1" max="10" value="1"></td>
+                <td>$79</td>
+            </tr>
+            <tr>
+                <td><a href="#"><i class="bi bi-trash"></i></a></td>
+                <td><img src="./img/product/f2.jpg"></td>
+                <td>Addidas Product</td>
+                <td>$79</td>
+                <td><input type="number" min="1" max="10" value="1"></td>
+                <td>$79</td>
+            </tr>
+            <tr>
+                <td><a href="#"><i class="bi bi-trash"></i></a></td>
+                <td><img src="./img/product/f3.jpg"></td>
+                <td>Addidas Product</td>
+                <td>$79</td>
+                <td><input type="number" min="1" max="10" value="1"></td>
+                <td>$79</td>
+            </tr>
+           </tbody>
+        </table>
 
     </section>
-    <section id="form-details">
-        <div class="userInput">
-            <span>LEAVE A MESSAGE</span>
-            <h2> We Love To hear From You!</h2>
-            <form class="form">
-                <input type="Text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your E-mail">
-                <input type="Text" placeholder="Subject" required>
-                <textarea cols="30" rows="10" placeholder="Type Your Response Please" style="padding-top: 10px;"></textarea>
+    <section id="cart-add" class="section-p">
+        <div id="coupon">
+            <h3>Apply Coupon</h3>
+            <div>
+                <input type="text" placeholder="Enter Your Cupon Code Here">
                 <button>Submit</button>
-            </form>
+            </div>
+
         </div>
-        <div class="people">
-            <div>
-                <img src="./img/people/1.png">
-                <p><span>John</span> Marketing Manager <br>Phone: 8780123453<br>E-mail: contact@gamil.com</p>
-            </div>
-            <div>
-                <img src="./img/people/2.png">
-                <p><span>Roman</span> Senior Developer <br>Phone: 8780123453<br>E-mail: mail@gamil.com</p>
-            </div>
-            <div>
-                <img src="./img/people/3.png">
-                <p><span>Rock</span> Buisness Development <br>Phone: 8780123453<br>E-mail: dummy@gamil.com</p>
-            </div>
+        <div id="subTotel">
+            <h3>Cart Totals</h3>
+            <table>
+                <tr>
+                    <td>Cart SubTotal</td>
+                    <td>$332</td>
+                </tr>
+                <tr>
+                    <td>Shipping</td>
+                    <td>Free</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td>$332</td>
+                </tr>
+            </table>
+            <button class="b">Proceed To Checkout</button>
         </div>
 
     </section>

@@ -845,7 +845,81 @@ footer .row img {
   margin-top: 20px;
   color: gray;
 }
+/* Design Cart.html */
+#cart table{
+  width: 100%;
+  border-collapse: collapse;
+  
+ 
+}
+#cart table img{
+  width: 70px;
+}
+#cart table thead{
+  border: 1px solid #e1e9e6;
+  border-left: none;
+  border-right: none;
+}
+#cart table thead tr{
+  font-size: 18px;
+  font-weight: bold;
+}
+#cart table tbody tr td{
+  padding-top: 10px;
+}
+#cart table tbody tr input{
+  padding: 0.5em 1em;
+  border-radius: 10px;
+}
+#cart-add{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#cart-add #coupon h3, #subTotel h3
+{
+  font-size: 20px;
+  padding-bottom: 15px;
 
+}
+#cart-add #coupon input{
+  width: 300px;
+  padding: 0.5em 1.5em;
+  border-radius: 10px;
+  outline: none;
+}
+#cart-add #coupon button{
+  background-color: #088178;
+  height: 34px;
+  width: 100px;
+  border-radius: 10px;
+  outline: none;
+  color: white;
+}
+#cart-add  #subTotel{
+  width: 50%;
+  border: 1px solid #e1e9e6;
+  padding: 30px;
+}
+#subTotel table{
+  width: 100%;
+  border-collapse: collapse;
+}
+#subTotel table  td{
+  width: 50%;
+  border: 1px solid #e1e9e2;
+  padding: 10px;
+  margin: 10px;
+}
+.b{
+  background-color: #088178;
+  margin-top: 30px;
+  width: 150px;
+  height: 40px;
+  color: white;
+  border-radius: 10px;
+  padding: 0.5em;
+}
 
 
 
