@@ -4,6 +4,36 @@
   box-sizing: border-box;
   font-family: 'spartan', sans-serif;
 }
+html {
+  scroll-behavior: smooth;
+}
+h1 {
+  font-size: 50px;
+  line-height: 64px;
+  color: #222;
+}
+
+h2 {
+  font-size: 46px;
+  line-height: 54px;
+  color: #222;
+}
+
+h4 {
+  font-size: 20px;
+  color: #222;
+}
+
+h6 {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+p {
+  font-size: 16px;
+  color: #465b52;
+ 
+}
 
 /* For Giveing Default padding to every Section */
 .section-p {
@@ -18,6 +48,7 @@
 
 body {
   width: 100%;
+  overflow-x: hidden;
 
 }
 
@@ -96,17 +127,20 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 20px 30px;
+  padding-left: 160px;
+  padding-top: 0px;
   justify-content: center;
 
 }
 
 #hero h4 {
-  padding-bottom: 10px;
+  padding-bottom: 20px;
+ 
 }
 
 #hero h1 {
   color: #088178;
+  
 }
 
 #hero button {
@@ -118,6 +152,11 @@ body {
   font-weight: 600;
   font-size: 16px;
   cursor: pointer;
+  transition: 0.2s ease;
+}
+#hero button:hover{
+  background-color: rgb(30, 30, 179);
+  
 }
 
 #feature {
@@ -152,23 +191,25 @@ body {
 }
 
 #feature .fe-box:nth-child(2) h6 {
-  background-color: #ebd5d5;
+  background-color: #ffecc8;
 }
 
 #feature .fe-box:nth-child(3) h6 {
-  background-color: #b89494;
+  background-color: #a6b7a6;
 }
 
 #feature .fe-box:nth-child(4) h6 {
-  background-color: #b1a5f8;
-}
-
-#feature .fe-box:nth-child(5) h6 {
   background-color: #bad9f3;
 }
 
+#feature .fe-box:nth-child(5) h6 {
+
+  background-color: #b1a5f8;
+}
+
+
 #feature .fe-box:nth-child(6) h6 {
-  background-color: rgb(161, 161, 77);
+  background-color: rgb(233 233 43);
 }
 
 /* Product 1 design Summer Collection New Modern Design  */
@@ -190,7 +231,7 @@ body {
   margin: 5px 0px;
   border: 1px solid #cce7d0;
   border-radius: 10px;
-
+  padding-bottom: 10px;
   text-align: left;
   cursor: pointer;
   position: relative;
@@ -207,7 +248,7 @@ body {
   font-size: 13px;
   font-weight: 400;
   color: #606063;
-  padding: 5px 5px;
+  padding: 10px 10px;
 
 
 }
@@ -217,14 +258,14 @@ body {
   font-weight: 800px;
   font-family: Arial, Helvetica, sans-serif;
   color: gray;
-  padding: 0px 5px;
+  padding: 0px 10px;
 
 
 }
 
 .star {
   color: #ffdf00;
-  padding: 0px 5px;
+  padding: 0px 10px;
 
 }
 
@@ -233,7 +274,7 @@ body {
   font-size: 15px;
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
-  padding: 0px 5px;
+  padding: 0px 10px;
 }
 
 .temp i {
@@ -244,11 +285,12 @@ body {
 
 #product1 .temp .cart {
 
-  font-size: 17px;
+  font-size: 20px;
   color: #088178;
   border: 1px solid #cce7d0;
-  border-radius: 80px;
+  border-radius: 50px;
   background-color: #e8f6ea;
+  padding: 5px;
   position: absolute;
   bottom: 10px;
   right: 20px;
@@ -292,9 +334,9 @@ body {
 }
 
 #banner .btn {
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 600;
-  padding: 0 1em;
+  padding: 0.25em 1em;
   color: #0d0e0d;
   background-color: #fff;
   border-radius: 4px;
