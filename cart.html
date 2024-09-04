@@ -36,44 +36,47 @@
         <p>Here Is Your Excited Shopping Details</p>
     </section>
     <section id="cart" class="section-p">
-        <table width="100%">
-           <thead >
-            <tr>
-                <td>Remove</td>
-                <td>Image</td>
-                <td>Product</td>
-                <td>Price</td>
-                <td>Quantity</td>
-                <td>SubTotal</td>
-            </tr>
-           </thead> 
-           <tbody>
-            <tr>
-                <td><a href="#"><i class="bi bi-trash"></i></a></td>
-                <td><img src="./img/product/f1.jpg"></td>
-                <td>Addidas Product</td>
-                <td>$79</td>
-                <td><input type="number" min="1" max="10" value="1"></td>
-                <td>$79</td>
-            </tr>
-            <tr>
-                <td><a href="#"><i class="bi bi-trash"></i></a></td>
-                <td><img src="./img/product/f2.jpg"></td>
-                <td>Addidas Product</td>
-                <td>$79</td>
-                <td><input type="number" min="1" max="10" value="1"></td>
-                <td>$79</td>
-            </tr>
-            <tr>
-                <td><a href="#"><i class="bi bi-trash"></i></a></td>
-                <td><img src="./img/product/f3.jpg"></td>
-                <td>Addidas Product</td>
-                <td>$79</td>
-                <td><input type="number" min="1" max="10" value="1"></td>
-                <td>$79</td>
-            </tr>
-           </tbody>
-        </table>
+        <section id="cart" class="section-p">
+            <table width="100%">
+                <thead>
+                    <tr>
+                        <td>Remove</td>
+                        <td>Image</td>
+                        <td>Product</td>
+                        <td>Price</td>
+                        <td>Quantity</td>
+                        <td>SubTotal</td>
+                    </tr>
+                </thead>
+                <tbody id="cart-items">
+                    <tr>
+                        <td><a href="#" class="remove-item"><i class="bi bi-trash"></i></a></td>
+                        <td><img src="./img/product/f1.jpg"></td>
+                        <td>Addidas Product</td>
+                        <td class="price">$79</td>
+                        <td><input type="number" class="quantity" min="1" max="10" value="1"></td>
+                        <td class="subtotal">$79</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#" class="remove-item"><i class="bi bi-trash"></i></a></td>
+                        <td><img src="./img/product/f2.jpg"></td>
+                        <td>Addidas Product</td>
+                        <td class="price">$79</td>
+                        <td><input type="number" class="quantity" min="1" max="10" value="1"></td>
+                        <td class="subtotal">$79</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#" class="remove-item"><i class="bi bi-trash"></i></a></td>
+                        <td><img src="./img/product/f3.jpg"></td>
+                        <td>Addidas Product</td>
+                        <td class="price">$79</td>
+                        <td><input type="number" class="quantity" min="1" max="10" value="1"></td>
+                        <td class="subtotal">$79</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        
 
     </section>
     <section id="cart-add" class="section-p">
@@ -164,6 +167,7 @@
         </div>
     </footer>
 
+    <script src="cart.js"></script>
 
     <script src="app.js"></script>
 </body>

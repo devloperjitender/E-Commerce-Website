@@ -14,3 +14,14 @@ if(close){
        navbar.classList.remove('active');
     })
 }
+
+const mainImage= document.querySelector("#mainImage");
+const minImage= document.querySelectorAll(".minImage");
+        
+       
+          
+        minImage.forEach(item => {
+            item.onclick =  function(){
+            mainImage.src= item.src;
+            }
+        });
